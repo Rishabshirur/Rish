@@ -5,7 +5,6 @@ void get_input(int*a,int*b)
     scanf("%d",a);
     printf("enter the second number");
     scanf("%d",b);
-
 }
 
 int add2nos(int a,int b)
@@ -15,12 +14,18 @@ int add2nos(int a,int b)
     return c;
 }
 
-void get_output(int a,int b, int c)
+void get_output(int a,int b, int *c)
 {
-    printf("%d=%d+%d")
+    *c=a+b;
+    printf("%d=%d+%d");
 }
 
-int main()
+int main(int a,int b, int c)
 {
-    
+    printf("enter the first number");
+    scanf("%d",&a);
+    printf("enter the second number");
+    scanf("%d",&b);
+    c=a+b;
+    printf("%d",c);
 }
